@@ -1,0 +1,46 @@
+@import "variables";
+
+.page-main {
+    padding: 1rem;
+}
+
+.page-header {
+    padding-block: 1rem;
+
+
+    .page-header__content {
+        font-family: $heading-font;
+
+        h1 {
+            font-size: $text-xxl;
+        }
+
+        h2 {
+            margin-bottom: .75rem;
+            font-size: $text-lg;
+        }
+    }
+
+    .page-header__icons {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .page-header__icon-svg {
+            $icon-size: 1.6rem;
+
+            height: $icon-size;
+            width: $icon-size;
+        }
+    }
+
+
+
+}
+
+@media (min-width: 900px) {
+    .page-main {
+        display: flex;
+    }
+}
