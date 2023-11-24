@@ -1,5 +1,6 @@
 import "./style/main.scss"
-import { About, Header } from "./sections"
+import { About, Header, Experience } from "./sections"
+
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
       <div className="page-sections__container">
         <About />
+        <Experience />
       </div>
     </main>
   )

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 $color-primary: #e8d4bc;
+$color-primary-bg: #cfa67e;
 $text-color: #4a4a4a;
 $heading-color: #333333;
+$heading-color2: #604c38;
 
 
 $text-font: "Roboto", sans-serif;
@@ -19,3 +21,8 @@ $text-xxl: 2rem;
 $text-3xl: 2.5rem;
 $text-4xl: 3rem;
 $text-5xl: 3.5rem;
+
+
+// Break Points
+$tabel-width: 768px;
+$laptop-width: 900px;

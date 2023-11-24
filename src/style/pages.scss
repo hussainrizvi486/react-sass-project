@@ -2,7 +2,10 @@
 
 .page-main {
     padding: 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
 }
+
 
 .page-header {
     padding-block: 1rem;
@@ -12,12 +15,12 @@
         font-family: $heading-font;
 
         h1 {
-            font-size: $text-xxl;
+            font-size: $text-3xl;
         }
 
         h2 {
-            margin-bottom: .75rem;
-            font-size: $text-lg;
+            margin-bottom: 1.5rem;
+            font-size: $text-xl;
         }
     }
 
@@ -28,7 +31,7 @@
         gap: 1rem;
 
         .page-header__icon-svg {
-            $icon-size: 1.6rem;
+            $icon-size: 1.85rem;
 
             height: $icon-size;
             width: $icon-size;
@@ -42,5 +45,106 @@
 @media (min-width: 900px) {
     .page-main {
         display: flex;
+        gap: 1rem;
+
+
+        .page-sections__container {
+            flex-basis: 100%;
+        }
+
+        .page-header {
+            flex-basis: 100%;
+        }
     }
+
+}
+
+
+.page-section__wrapper {
+    margin-block: 2rem 8rem;
+    font-family: $heading-font;
+
+    .page-section__heading {
+        font-family: $heading-font;
+        font-size: $text-md;
+        font-weight: 500;
+    }
+
+    .page-section__content {
+        margin-top: 2rem;
+    }
+
+
+}
+
+.about-section-paragraph {
+    p {
+        margin-block: .5rem;
+        font-size: $text-sm;
+    }
+}
+
+.website-card {
+    display: grid;
+    gap: .5rem;
+
+    .website-card__header {
+        font-size: $text-xs;
+        font-weight: 500;
+    }
+
+    .website-card_content {
+        h4 {
+            font-size: $text-sm;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: $text-sm;
+
+        }
+
+        .langs-row {
+            margin-top: 1rem;
+            display: flex;
+            gap: .35rem;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+@media (min-width: $tabel-width) {
+    .page-header {
+        padding-top: 2rem;
+        padding-inline: 3rem;
+    }
+
+
+    .website-card {
+        grid-template-columns: repeat(10, 1fr);
+
+        .website-card__header {
+            grid-column: span 2;
+        }
+        
+        .website-card_content {
+            grid-column: span 8;
+            
+        }
+    }
+}
+
+
+.language-card {
+    font-size: $text-xs;
+    padding: .4rem 1rem;
+    background-color: $color-primary-bg;
+    color: $heading-color2;
+    font-weight: 500;
+    border-radius: 15px;
 }

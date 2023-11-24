@@ -20,9 +20,9 @@ export const Header = () => {
             <section className="page-header__icons">
 
                 <MailPlus className="page-header__icon-svg" />
-                <Linkedin className="" />
-                <Github className="" />
-                <Facebook className="" />
+                <Linkedin className="page-header__icon-svg" />
+                <Github className="page-header__icon-svg" />
+                <Facebook className="page-header__icon-svg" />
 
             </section>
         </>
